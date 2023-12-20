@@ -1,0 +1,1 @@
+# LambdaTest-Adapter-Design-Pattern
