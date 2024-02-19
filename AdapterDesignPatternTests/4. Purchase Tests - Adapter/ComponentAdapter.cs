@@ -62,13 +62,13 @@ public class ComponentAdapter : IComponent
 
     public IComponent FindComponent(By locator)
     {
-        var element = _webDriver.FindElement(locator);
+        var element = _webElement.FindElement(locator);
         return new ComponentAdapter(_webDriver, element, locator);
     }
 
     public List<IComponent> FindComponents(By locator)
     {
-        var elements = _webDriver.FindElements(locator);
+        var elements = _webElement.FindElements(locator);
         var components = new List<IComponent>();
         foreach (var element in elements)
         {
